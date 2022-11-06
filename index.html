@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ab367dd5ba.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="wrapper">
+  <div class="box-shadow"></div>
+
+  <nav class="nav">
+
+    <div class="container">
+      <div class="nav-left">
+        <button class="nav__burger-btn">
+          <div class="bars bars-top"></div>
+          <div class="bars bars-middle"></div>
+          <div class="bars bars-bottom"></div>
+        </button>
+        <p class="nav__heading">sneakers</p>
+        <div class="nav-desktop">
+          <a href="#" class="nav-desktop__item">Collections</a>
+          <a href="#" class="nav-desktop__item">Men</a>
+          <a href="#" class="nav-desktop__item">Women</a>
+          <a href="#" class="nav-desktop__item">About</a>
+          <a href="#" class="nav-desktop__item">Contact</a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <button class="btn"><img class="nav__cart" src="./images/icon-cart.svg" alt="Cart with orders">
+          <p class="nav__cart-counter">0</>
+        </button>
+        <button class="btn"><img class="nav__avatar" src="./images/image-avatar.png" alt="Man picture"></buttonc>
+      </div>
+    </div>
+
+    <div class="nav-mobile">
+      <img class="nav-mobile__close" src="./images/icon-close.svg" alt="">
+      <a href="#" class="nav-mobile__item">Collections</a>
+      <a href="#" class="nav-mobile__item">Men</a>
+      <a href="#" class="nav-mobile__item">Women</a>
+      <a href="#" class="nav-mobile__item">About</a>
+      <a href="#" class="nav-mobile__item">Contact</a>
+    </div>
+
+  </nav>
+
+  <section class="shoe" aria-label="Limited shoes">
+
+    <div class="shoe-carousel-box">
+      <div class="carousel">
+        <button class="carousel-button prev" data-carousel-button="prev"><i
+            class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-button next" data-carousel-button="next"><i
+            class="fa-solid fa-chevron-right"></i></button>
+        <ul class="carousel-items" data-slides>
+          <li class="carousel__slide" data-active><img src="./images/image-product-1.jpg"
+              alt="Pair of shoes. One stands on the tip"></li>
+          <li class="carousel__slide"><img src="./images/image-product-2.jpg"
+              alt="Pair of shoes. One of them stands on the stone"></li>
+          <li class="carousel__slide"><img src="./images/image-product-3.jpg" alt="Shoe stands on two stones"></li>
+          <li class="carousel__slide"><img src="./images/image-product-4.jpg"
+              alt="Pair of shoes. One of them stands on the stone"></li>
+        </ul>
+      </div>
+      <ul class="carousel-items-desktop" data-slides>
+        <li class="carousel__slide-desktop" data-active>
+          <div class="box-shadow-product box-shadow-product-active"></div><img src="./images/image-product-1.jpg"
+            alt="Pair of shoes. One stands on the tip">
+        </li>
+        <li class="carousel__slide-desktop">
+          <div class="box-shadow-product"></div><img src="./images/image-product-2.jpg"
+            alt="Pair of shoes. One of them stands on the stone"">
+        </li>
+        <li class=" carousel__slide-desktop">
+          <div class="box-shadow-product "></div><img src="./images/image-product-3.jpg" alt="Shoe stands on two stone">
+        </li>
+        <li class="carousel__slide-desktop">
+          <div class="box-shadow-product"></div><img src="./images/image-product-4.jpg"
+            alt="Pair of shoes. One of them stands on the stone">
+        </li>
+      </ul>
+    </div>
+
+    <div class="description">
+      <p class="company-name">sneaker company</p>
+      <h1 class="heading">Fall Limited Edition Sneakers</h1>
+      <p class="overview">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber
+        outer sole, they'll withstand everything the weather can offer.
+      <div class="prices">
+        <div class="current-box">
+          <p class="current-price">$125.00</p>
+          <div class="discount"><span>50%</span></div>
+        </div>
+        <div class="prev-price">$250.00</div>
+      </div>
+      <div class="number-box">
+        <button class="minus control">-</button>
+        <input class="number" placeholder="0" value="0"></>
+        <button class="plus control">+</button>
+      </div>
+      <button class="add"><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+    </div>
+
+    <div class="basket">
+      <p class="basket__heading">Cart</p>
+      <hr>
+      <div class="basket-bottom">
+        <p class="basket__info">Your cart is empty.</p>
+      </div>
+      <button class="basket__trash"><i class="fa-solid fa-trash-can"></i></button>
+    </div>
+
+  </section>
+
+
+
+  <script src="./js/main.js" defer></script>
+</body>
+
+</html>
